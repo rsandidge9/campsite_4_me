@@ -27,7 +27,7 @@ async function fetchWeather() {
     const response = await fetch(url);
     const data = await response.json();
     displayWeather(data);
-    //console.log(data);
+    console.log(data);
   } catch (error) {
     console.error("There was an error!", error);
   }
